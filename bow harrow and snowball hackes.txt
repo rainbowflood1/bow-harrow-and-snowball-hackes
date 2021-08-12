@@ -1,0 +1,53 @@
+/execute @e[type=arrow] ~ ~ ~ fill ~5 ~5 ~5 ~-5 ~ ~-5 air 
+
+/give @s command_block
+
+/execute @e[type=arrow] ~ ~ ~ detect ~ ~-1 ~ air 0 summon tnt
+
+ /execute @e[type=arrow] ~ ~ ~ detect ~ ~-1 ~ air 0 summon lightning_bolt
+
+@e[type=minecraft:arrow] run summon minecraft:pig ~ ~ ~ {NoAI:true}
+
+@e[type=minecraft:arrow] run tp @a ~ ~ ~
+
+kill @e[type=arrow]
+
+execute @e[name=Snowball] ~~~ execute @e[tag=!staff,r=3] ~~~ summon lightning_bolt
+5 Tick delay
+
+execute @e[type=snowball] ~~~ fill ~-.8~-.8~-.8 ~.8~.8~.8 air 0 replace snow
+
+Team2: execute @e[type=egg] ~~~ kill @p[tag=!team2,r=2]
+
+Team1: execute @e[type=snowball] ~~~ kill @p[tag=!team1,r=2]
+
+execute @e[type=snowball] ~~~ execute @e[type=!snowball,type=!player,r=5] ~~~ summon lightning_bolt
+
+execute @e[type=snowball] ~~~ tp @e[type=tnt] ~~-1.5~
+
+execute @e[type=snowball] ~~~ summon tnt ~~-1.8~ 
+
+execute @e[type=snowball] ~~~ summon lightning_bolt
+
+execute @e[type=snowball] ~~~ summon evocation_fang
+
+/execute @e[type=snowball] ~ ~ ~ summon ender_crystal ~ ~ ~
+
+/testfor @e[type=snowball]
+
+/execute @e[type=snowball] ~ ~ ~ particle minecraft:mobflame_single ^ ^ ^1
+
+/execute @e[type=snowball] ~ ~ ~ detect ~ ~-1 ~ grass -1 summon
+
+/testfor @e[type=snowball]
+
+/execute @e[type=snowball] ~ ~ ~ particle minecraft:mobflame_single ^ ^ ^1
+
+/execute @e[type=arrow] ~ ~ ~ fill ~5 ~5 ~5 ~-5 ~ ~-5 air 
+
+
+
+
+
+
+
