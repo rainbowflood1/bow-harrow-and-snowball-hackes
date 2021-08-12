@@ -60,7 +60,7 @@ execute @e[type=thrown_trident] ~~~ summon evocation_fang
 execute @e[type=thrown_trident] ~~~ detect ~~-1~ grass 0 summon tnt
 Kill @e[type=thrown_trident]
 
-
+/execute @e[type=snowball] ~ ~ ~ summon Fireball ~ ~ ~ {direction:[0.0,0.0,0.0],ExplosionPower:2}
 
 
 
