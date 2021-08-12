@@ -45,6 +45,25 @@ execute @e[type=snowball] ~~~ summon evocation_fang
 
 /execute @e[type=arrow] ~ ~ ~ fill ~5 ~5 ~5 ~-5 ~ ~-5 air 
 
+execute @e[type=thrown_trident] ~~~ tp @e[type=!thrown_trident,type=!player,type=item,r=3]
+
+execute @e[type=thrown_trident] ~~~ summon lightning_bolt
+
+execute @e[type=thrown_trident] ~~~ tp @e[type=player,r=6] ~~~
+
+execute @e[type=thrown_trident] ~~~ kill @e[type=!thrown_trident,type=!player,r=3]
+
+execute @e[type=thrown_trident] ~~~ particle minecraft:basic_flame_particle ~~~
+
+execute @e[type=thrown_trident] ~~~ summon evocation_fang
+
+execute @e[type=thrown_trident] ~~~ detect ~~-1~ grass 0 summon tnt
+Kill @e[type=thrown_trident]
+
+
+
+
+
 
 
 
